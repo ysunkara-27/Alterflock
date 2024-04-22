@@ -15,16 +15,12 @@ export function AuthProvider({ children }) {
       setCurrentUser(user);
     });
 
-    return unsubscribe;  // Unsubscribe on component unmount
+    return unsubscribe; // Unsubscribe on component unmount
   }, []);
 
   const value = {
-    currentUser
+    currentUser,
   };
 
-  return (
-    <AuthContext.Provider value={value}>
-      {children}
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll'; // For smooth scrolling within the page
 import { Link as RouterLink, useLocation } from 'react-router-dom'; // For routing and to determine current location
-import './Header.css';  // Ensure the CSS file is properly linked
+import './Header.css'; // Ensure the CSS file is properly linked
 
 function Header() {
   const location = useLocation(); // This hook gives us the current location object
@@ -22,14 +22,44 @@ function Header() {
       </div>
       <nav className="navigation">
         <ul>
-          <li>{isHomePage ? <ScrollLink to="about" smooth={true} duration={1000}>About Us</ScrollLink> : <RouterLink to="/#about">About Us</RouterLink>}</li>
-          <li>{isHomePage ? <ScrollLink to="opportunities" smooth={true} duration={1000}>Investment Opportunities</ScrollLink> : <RouterLink to="/#opportunities">Investment Opportunities</RouterLink>}</li>
-          <li>{isHomePage ? <ScrollLink to="technology" smooth={true} duration={1000}>Technology</ScrollLink> : <RouterLink to="/#technology">Technology</RouterLink>}</li>
+          <li>
+            {isHomePage ? (
+              <ScrollLink to="about" smooth={true} duration={1000}>
+                About Us
+              </ScrollLink>
+            ) : (
+              <RouterLink to="/#about">About Us</RouterLink>
+            )}
+          </li>
+          <li>
+            {isHomePage ? (
+              <ScrollLink to="opportunities" smooth={true} duration={1000}>
+                Investment Opportunities
+              </ScrollLink>
+            ) : (
+              <RouterLink to="/#opportunities">
+                Investment Opportunities
+              </RouterLink>
+            )}
+          </li>
+          <li>
+            {isHomePage ? (
+              <ScrollLink to="technology" smooth={true} duration={1000}>
+                Technology
+              </ScrollLink>
+            ) : (
+              <RouterLink to="/#technology">Technology</RouterLink>
+            )}
+          </li>
         </ul>
       </nav>
       <div className="auth-links">
-        <RouterLink to="/signin" className="auth-link">Sign In</RouterLink>
-        <RouterLink to="/register" className="auth-link register">Register</RouterLink>
+        <RouterLink to="/signin" className="auth-link">
+          Sign In
+        </RouterLink>
+        <RouterLink to="/register" className="auth-link register">
+          Register
+        </RouterLink>
       </div>
     </header>
   );

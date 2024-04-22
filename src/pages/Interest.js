@@ -1,6 +1,5 @@
-// src/pages/Interest.js
 import React from 'react';
-import './Interest.css'; // Make sure to create and link to your Interest.css file
+import './Interest.css';
 
 const Interest = () => {
   return (

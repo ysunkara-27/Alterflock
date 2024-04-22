@@ -1,6 +1,5 @@
-// src/pages/Home.js
 import React, { useEffect } from 'react';
-import { Element, scroller } from 'react-scroll';
+import { Element } from 'react-scroll';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,10 +12,23 @@ function Home() {
   }, []);
 
   const sliderSettings = {
-    dots: true, infinite: true, speed: 500, slidesToShow: 3, slidesToScroll: 3, responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2, infinite: true, dots: true } },
-      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }
-    ]
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+    ],
   };
 
   return (
@@ -25,7 +37,9 @@ function Home() {
         <div className="hero-content">
           <h1>Welcome to AlterFlock</h1>
           <p>Join the waitlist and start investing in real estate with us.</p>
-          <Link to="/Interest" className="join-btn">Join the Flock!</Link>
+          <Link to="/Interest" className="join-btn">
+            Join the Flock!
+          </Link>
         </div>
       </div>
       <Element name="about" className="about-section">
@@ -35,9 +49,7 @@ function Home() {
       </Element>
       <Element name="opportunities" className="opportunities-section">
         <h2>Investment Opportunities</h2>
-        <Slider {...sliderSettings}>
-          {/* Slide items */}
-        </Slider>
+        <Slider {...sliderSettings}>{/* Slide items */}</Slider>
       </Element>
       <Element name="technology" className="technology-section">
         <h2>Technology and Data Analytics</h2>
