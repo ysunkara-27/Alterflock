@@ -39,7 +39,7 @@ function App() {
           path="/"
           element={
             <ProtectedRoute>
-              <Home /> // If this is your default route for logged-in users
+              <Home /> 
             </ProtectedRoute>
           }
         />
