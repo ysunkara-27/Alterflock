@@ -11,10 +11,7 @@ import ProtectedRoute from './components/layout/ProtectedRoute';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.css';
-import AboutUs from './pages/AboutUs';
-// src/App.js
-import Interest from './pages/Interest'; // Import your new SignUp component
-// ... other imports
+import Interest from './pages/Interest'; 
 
 function App() {
   return (

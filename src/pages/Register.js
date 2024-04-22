@@ -24,7 +24,7 @@ function Register() {
 
     return (
         <div className="register-container">            
-        <h1>Register</h1>
+        <h1>Register (COMING SOON) </h1>
             {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error message if there is an error */}
             <form onSubmit={handleRegister}>
                 <label>

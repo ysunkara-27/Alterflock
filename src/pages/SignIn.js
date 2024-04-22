@@ -18,7 +18,7 @@ function SignIn() {
 
   return (
     <div className="signIn-container">        
-    <h1>Sign In</h1>
+    <h1>Sign In (COMING SOON)</h1>
       <br />
       <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
       <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
