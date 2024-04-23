@@ -46,31 +46,31 @@ function Home() {
         </div>
       </div>
       <Element name="how-it-works" className="how-it-works-section">
-        <h2>How It Works</h2>
+        <h1>How It Works</h1>
         <div className="steps-container">
           <div className="step">
             <FaUserPlus size={50} className="step-icon" />
-            <h3>Sign Up</h3>
+            <h2>Sign Up</h2>
             <p>Create your account quickly and easily to join our community of investors.</p>
           </div>
           <div className="step">
             <FaSearch size={50} className="step-icon" />
-            <h3>Browse Opportunities</h3>
+            <h2>Browse Opportunities</h2>
             <p>Explore a curated list of properties with detailed insights.</p>
           </div>
           <div className="step">
             <FaDollarSign size={50} className="step-icon" />
-            <h3>Invest</h3>
+            <h2>Invest</h2>
             <p>Choose how much you want to invest—from as little as $10.</p>
           </div>
           <div className="step">
             <FaChartLine size={50} className="step-icon" />
-            <h3>Track Progress</h3>
+            <h2>Track Progress</h2>
             <p>Monitor your investment through our platform. Get real-time updates on property status.</p>
           </div>
           <div className="step">
             <FaRegMoneyBillAlt size={50} className="step-icon" />
-            <h3>Receive Returns</h3>
+            <h2>Receive Returns</h2>
             <p>Earn dividends or get your share of the profit when the property is sold.</p>
           </div>
         </div>
