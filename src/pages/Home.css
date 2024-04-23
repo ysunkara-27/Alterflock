@@ -73,3 +73,7 @@
   line-height: 1.4;
 }
 
+.how-it-works-section p {
+  margin-left: 12px; /* Slightly larger space above each paragraph */
+  margin-right: 12px; /* Slightly larger space below each paragraph */
+}
