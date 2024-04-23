@@ -24,11 +24,11 @@ function Header() {
         <ul>
           <li>
             {isHomePage ? (
-              <ScrollLink to="about" smooth={true} duration={1000}>
+              <ScrollLink to="how-it-works" smooth={true} duration={1000}>
                 How it Works
               </ScrollLink>
             ) : (
-              <RouterLink to="/#about">About Us</RouterLink>
+              <RouterLink to="/#how-it-works">How it Works</RouterLink>
             )}
           </li>
           <li>

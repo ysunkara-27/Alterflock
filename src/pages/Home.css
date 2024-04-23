@@ -77,3 +77,58 @@
   margin-left: 12px; /* Slightly larger space above each paragraph */
   margin-right: 12px; /* Slightly larger space below each paragraph */
 }
+/* src/pages/Home.css */
+/* Overall layout adjustments */
+.home {
+  width: 100%; /* Ensure the container is full width */
+  margin: auto; /* Center the content */
+}
+
+/* Hero section with a specific background color */
+.hero {
+  background-color: #f9f9f9; /* Light gray, adjust the color as needed */
+  padding: 40px 20px; /* Increased padding for better spacing */
+}
+
+/* Opportunities section with another distinct color */
+.opportunities-section {
+  background-color: #c7c7c7; /* Another shade of light gray */
+  padding: 40px 20px;
+}
+
+/* Technology section with a unique background color */
+.technology-section {
+  background-color: #fefcff; /* A different light gray */
+  padding: 40px 20px;
+}
+
+/* How It Works section with its own background color */
+.how-it-works-section {
+  background-color: #fefcff; /* Yet another light gray */
+  padding: 40px 20pxrgb(58, 28, 28)
+}
+
+/* Add borders between sections for clearer separation */
+.hero, .about-section, .opportunities-section, .technology-section, .how-it-works-section {
+  border-bottom: 1px solid #e1e1e1; /* Light gray border */
+}
+
+/* src/pages/Home.css or src/components/Home.css */
+.opportunities-section {
+  background-color: #c7c7c7;
+  color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.property-slide {
+  padding: 20px;
+  text-align: center; /* Center text within each slide */
+}
+
+.property-image {
+  width: 100%; /* Make image responsive within the container */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners for aesthetics */
+  margin-bottom: 20px;
+}
