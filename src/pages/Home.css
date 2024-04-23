@@ -37,4 +37,39 @@
 
 }
 
-/* Rest of the styles */
+/* src/pages/Home.css */
+.how-it-works-section {
+  padding: 50px 20px;
+  background-color: #fff; /* Optional: depending on your design preference */
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step {
+  flex-basis: 20%; /* Adjust based on your layout preference */
+  min-width: 280px; /* Ensure it doesn't get too small on narrow screens */
+  max-width: 340px; /* Limit max size */
+}
+
+.step-icon {
+  color: #4a90e2; /* Example color */
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.4;
+}
+

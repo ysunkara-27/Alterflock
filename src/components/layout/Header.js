@@ -25,7 +25,7 @@ function Header() {
           <li>
             {isHomePage ? (
               <ScrollLink to="about" smooth={true} duration={1000}>
-                About Us
+                How it Works
               </ScrollLink>
             ) : (
               <RouterLink to="/#about">About Us</RouterLink>
