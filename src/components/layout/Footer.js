@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       {/* Your footer content goes here */}
       <p>&copy; 2024 AlterFlock. All rights reserved.</p>
-      <p> Yashaswi Sunkara</p>
+      <p></p>
     </footer>
   );
 }

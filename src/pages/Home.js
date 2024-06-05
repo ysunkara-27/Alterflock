@@ -6,15 +6,32 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { FaUserPlus, FaSearch, FaDollarSign, FaChartLine, FaRegMoneyBillAlt } from 'react-icons/fa';
 import './Home.css';
 
 
 function Home() {
+  const [housingStats, setHousingStats] = useState([]);
+  // Assuming you've already defined your `properties` array here
+
   useEffect(() => {
     AOS.init({ duration: 2000, once: true });
-  }, []);
 
+    // Function to fetch housing statistics
+    async function fetchHousingStats() {
+      try {
+        const response = await axios.get('/api/housing-stats');
+        setHousingStats(response.data); // Assuming the API returns an array of stats
+      } catch (error) {
+        console.error('Error fetching housing stats:', error);
+        // Optionally, set default or cached stats on error
+      }
+    }
+
+    fetchHousingStats(); // Call the function to fetch stats
+  }, []);
+  
   const properties = [
     {
       imageUrl: "/houseslider.jpg",
@@ -50,11 +67,11 @@ function Home() {
     <div className="home">
       <div className="hero" style={{ backgroundImage: 'url(/house2.png)' }}>
         <div className="hero-content">
-          <h1>Welcome to AlterFlock</h1>
-          <p>Reimagining Property Investment Through Accessible Crowdfunding</p>
+          <h1>Welcome to ReNest</h1>
+          <p>    </p>
           <p>Join the waitlist and start investing with us</p>
           <Link to="/Interest" className="join-btn">
-            Join the Flock!
+            Join the Nest!
           </Link>
         </div>
       </div>
@@ -74,7 +91,7 @@ function Home() {
           <div className="step">
             <FaDollarSign size={50} className="step-icon" />
             <h3>Invest</h3>
-            <p>Choose how much you want to invest—from as little as $10.</p>
+            <p>Choose how much you want to invest—from as little as $25.</p>
           </div>
           <div className="step">
             <FaChartLine size={50} className="step-icon" />
@@ -100,11 +117,24 @@ function Home() {
           ))}
         </Slider>
       </Element>
+      <Element name="stats" className="stats-section" data-aos="fade-up">
+        <h1>Housing Market Statistics</h1>
+        <div className="stats-container">
+          {/* Assume housingStats is an array of objects like { title: 'Fed Interest Rates', trend: 'UP', description: '...'} */}
+          {housingStats.map((stat, index) => (
+            <div key={index} className="stat-item">
+              <h2>{stat.title}</h2>
+              <p>{stat.trend}</p>
+              <p>{stat.description}</p>
+            </div>
+          ))}
+        </div>
+      </Element>
       <Element name="technology" className="technology-section">
         <h1>Technology and Data Analytics</h1>
         <p>At AlterFlock, we are developing our use of technology and data analytics. By collaborating with builders and property owners eager to connect with investors, we streamline the process of identifying and securing promising investment opportunities. Our approach ensures that every investment is straightforward and transparent, setting the stage for smarter real estate decisions. </p>
         <br></br>
-        <p>Hi, I'm Yashaswi Sunkara, a first-year student at UVA interested in the intersections of Computer Science, Public Policy, and Finance. Driven by a desire to make real estate investing more accessible, I started working on AlterFlock. Our platform is dedicated to opening up property investment opportunities to everyone, no matter the size of their wallet. Join us in democratizing investment, one property at a time.</p>
+        <p></p>
       </Element>
     </div>
   );

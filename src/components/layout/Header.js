@@ -51,6 +51,15 @@ function Header() {
               <RouterLink to="/#technology">Technology</RouterLink>
             )}
           </li>
+          <li>
+            {isHomePage ? (
+              <ScrollLink to="Stats" smooth={true} duration={1000}>
+                Stats
+              </ScrollLink>
+            ) : (
+              <RouterLink to="/#stats">Stats</RouterLink>
+            )}
+          </li>
         </ul>
       </nav>
       <div className="auth-links">
