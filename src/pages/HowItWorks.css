@@ -1,0 +1,40 @@
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f9; /* Light grey background for slight contrast */
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px; /* Spacing below the section title */
+    font-family: 'Quantico', sans-serif;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap in small screens */
+    padding: 20px;
+  }
+  
+  .step {
+    width: 30%; /* Adjust based on preference, maybe use min-width for responsiveness */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    background-color: #fff; /* White background for each step */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .step-image {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+  
+  @media (max-width: 768px) {
+    .step {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }  
