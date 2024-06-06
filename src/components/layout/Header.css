@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   }
   
   .header .logo a, .header .navigation a {
@@ -73,7 +73,7 @@
   }
   
   .header {
-    background-color: #201D3C; /* Adjusted to match logo background */
+    background-color: #ffffff; /* Adjusted to match logo background */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +94,7 @@
   }
   
   .header .navigation ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -109,7 +109,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #201D3C; /* Adjust color to fit your design */
+    background-color: #ffffff; /* Adjust color to fit your design */
   }
   
   .logo img {
@@ -131,7 +131,7 @@
   
   .auth-links a {
     background-color: #f1f1f1; /* Light background for visibility */
-    color: #333; /* Dark text for contrast */
+    color: #6F6781; /* Dark text for contrast */
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;

@@ -1,198 +1,48 @@
-/* Base CSS for desktop */
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.item {
-  flex: 1; /* Flex grow to distribute space */
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Responsive CSS for mobile devices */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .item {
-    margin: 10px 0; /* Adjust margin for vertical stacking */
-  }
-}
-
-/* Additional responsive adjustments for very small screens */
-@media (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-
-  .item {
-    padding: 10px;
-  }
-}
-/* src/pages/Home.css */
 .home {
   width: 100%;
-  min-height: 100vh;
-}
-
-.hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* Aligns content to the right */
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* Full viewport height */
 }
 
-.hero-content {
-  max-width: 40%; /* Adjust as needed */
-  margin-right: 5%; /* Right spacing */
-  color: #000000; /* Text color */
-  text-align: right; /* Aligns text to the right */
-  font-weight: bold; /* Optional: if you want the font to be bold */
-  font-size: 1.1rem; /* Adjust the size as you like */
-
-}
-
-.join-btn {
-  padding: 10px 20px;
-  background-color: #201D3C; /* Theme color */
-  border: none;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: 'Quantico', sans-serif; /* Replace with your font choice if different */
-  margin-top: 20px;
-  margin-right: 20%; /* Right spacing */
-
-}
-
-/* src/pages/Home.css */
-.how-it-works-section {
-  padding: 50px 20px;
-  background-color: #fff; /* Optional: depending on your design preference */
-  text-align: center;
-}
-
-.steps-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.step {
-  flex-basis: 20%; /* Adjust based on your layout preference */
-  min-width: 280px; /* Ensure it doesn't get too small on narrow screens */
-  max-width: 340px; /* Limit max size */
-}
-
-.step-icon {
-  color: #4a90e2; /* Example color */
-  margin-bottom: 20px;
-}
-
-.step h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.step p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.4;
-}
-
-.how-it-works-section p {
-  margin-left: 12px; /* Slightly larger space above each paragraph */
-  margin-right: 12px; /* Slightly larger space below each paragraph */
-}
-/* src/pages/Home.css */
-/* Overall layout adjustments */
-.home {
-  width: 100%; /* Ensure the container is full width */
-  margin: auto; /* Center the content */
-}
-
-/* Hero section with a specific background color */
 .hero {
-  background-color: #f9f9f9; /* Light gray, adjust the color as needed */
-  padding: 40px 20px; /* Increased padding for better spacing */
-}
-
-/* Opportunities section with another distinct color */
-.opportunities-section {
-  background-color: #c7c7c7; /* Another shade of light gray */
-  padding: 40px 20px;
-}
-
-/* Technology section with a unique background color */
-.technology-section {
-  background-color: #fefcff; /* A different light gray */
-  padding: 40px 20px;
-}
-
-/* How It Works section with its own background color */
-.how-it-works-section {
-  background-color: #fefcff; /* Yet another light gray */
-  padding: 40px 20pxrgb(58, 28, 28)
-}
-
-/* Add borders between sections for clearer separation */
-.hero, .about-section, .opportunities-section, .technology-section, .how-it-works-section {
-  border-bottom: 1px solid #e1e1e1; /* Light gray border */
-}
-
-/* src/pages/Home.css or src/components/Home.css */
-.opportunities-section {
-  background-color: #c7c7c7;
-  color: #000000;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.property-slide {
-  padding: 20px;
-  text-align: center; /* Center text within each slide */
-}
-
-.property-image {
-  width: 100%; /* Make image responsive within the container */
-  height: auto;
-  border-radius: 8px; /* Optional: rounded corners for aesthetics */
-  margin-bottom: 20px;
-}
-.stats-section {
-  padding: 40px 20px;
-  background-color: #f8f8f8;
-}
-
-.stats-container {
+  width: 100%;
+  height: 100vh; /* This ensures the section takes up the full viewport height */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  text-align: center;
+  background-color: #6F6781; /* Adjust the background color as needed */
 }
 
-.stat {
-  flex-basis: 30%;
-  margin: 10px;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.hero-content h1 {
+  font-family: 'Quantico', sans-serif;
+  font-size: 5rem; /* Large, readable text */
+  color: #ffffff; /* Darker text for contrast */
 }
 
-.stat h3 {
-  margin: 0;
-  color: #333333;
+.hero-content .catchphrase {
+  font-family: 'Quantico', sans-serif;
+  font-size: 2.5rem;
+  color: #e3e3e3; /* Subtle grey */
+  margin-top: 20px; /* Space between title and catchphrase */
 }
 
-.stat p {
-  color: #666666;
+.hero-content .mission-statement {
+  font-size: 1.2rem;
+  color: #c1c1c1; /* Slightly darker grey */
+  margin-top: 10px; /* Space between catchphrase and mission statement */
+}
+
+.slideshow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adds space between the hero section and the iframe */
+}
+
+iframe {
+  width: 960px; /* Specify the width to control the size of the iframe */
+  height: 569px; /* Specify the height to maintain aspect ratio */
+  border: none; /* Remove border for a cleaner look */
 }

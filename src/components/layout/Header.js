@@ -12,11 +12,11 @@ function Header() {
       <div className="logo">
         {isHomePage ? (
           <ScrollLink to="hero" smooth={true} duration={1000}>
-            <img src="/alterflock.png" alt="AlterFlock Logo" />
+            <img src="/renest.png" alt="AlterFlock Logo" />
           </ScrollLink>
         ) : (
           <RouterLink to="/">
-            <img src="/alterflock.png" alt="AlterFlock Logo" />
+            <img src="/renest.png" alt="AlterFlock Logo" />
           </RouterLink>
         )}
       </div>

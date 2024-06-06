@@ -1,54 +1,32 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from 'react-router-dom';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
-import ProtectedRoute from './components/layout/ProtectedRoute';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './App.css';
+import AboutUs from './pages/AboutUs';
+import InvestmentOpportunities from './pages/InvestmentOpportunities';
 import Interest from './pages/Interest';
+import Footer from './components/layout/Footer';  // Corrected path if Footer.js is in the src/components folder
+import './App.css';
 
 function App() {
-  return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />{' '}
-        {/* This should render the Home component */}
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/Interest" element={<Interest />} /> {/* Add this line */}
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Home /> 
-            </ProtectedRoute>
-          }
-        />
-        {/* If you want to redirect from "/" to "/dashboard" for authenticated users */}
-        {<Route path="/" element={<Navigate to="/dashboard" replace />} />}
-      </Routes>
-      <Footer />
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="navigation">
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/AboutUs">About Us</Link></li>
+                    <li><Link to="/InvestmentOpportunities">Impact Investing</Link></li>
+                    <li><Link to="/Interest">Contact Us/Work With Us</Link></li>
+                </ul>
+            </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/AboutUs" element={<AboutUs />} />
+                <Route path="/InvestmentOpportunities" element={<InvestmentOpportunities />} />
+                <Route path="/Interest" element={<Interest />} />
+            </Routes>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;
