@@ -1,7 +1,7 @@
 .about-us {
     padding: 20px;
-    font-family: 'Arial', sans-serif;
-  }
+    font-family: 'Quantico', sans-serif;
+}
   
   .problem-statement {
     text-align: center;
@@ -22,7 +22,7 @@
   
   .cofounder-image {
     width: 150px;
-    height: 150px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
   }
