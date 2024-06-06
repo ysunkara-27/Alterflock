@@ -7,7 +7,7 @@ const cofounders = [
     name: "Yashaswi Sunkara",
     title: "Cheif Executive Officer",
     image: 'path_to_Yashaswi_image.jpg',
-    description: `Yashaswi Sunkara is a rising second-year student at the University of Virginia, aiming to major in Computer Science and Public Policy, with minors in Economics and Entrepreneurship. ReNest started as just an idea in his mind to develop a real-estate crowdfunding platform (AlterFlock), but pivoted when the team was developed at a UVA Social Entrepreneurship Bootcamp. He is deeply engaged in understanding how technology can influence government policy and economic strategies. Yash also likes to pursue various computer science passion projects outside of his academic pursuits, and he enjoys pickleball, running, and cherishes his downtime spent sleeping.`
+    description: `Yashaswi Sunkara is a rising second-year student at the University of Virginia, aiming to major in Computer Science and Public Policy, with minors in Economics and Entrepreneurship. ReNest started as just an idea in his mind to develop a real-estate crowdfunding platform (AlterFlock), but pivoted when the team was developed at a UVA Social Entrepreneurship Bootcamp. He is deeply engaged in understanding how technology can influence government policy and economic strategies. Yash also likes to pursue various computer science passion projects outside of his academic pursuits, and he enjoys pickleball, filming YouTube videos, and cherishes his downtime spent sleeping.`
   },
   {
     name: "Semony Shah",
@@ -25,7 +25,7 @@ const cofounders = [
     name: "Nitya Varigala",
     title: "Cheif Operations Officer",
     image: 'Nitya Headshot.jpg',
-    description: `Details about Nitya Varigala...` // Complete this based on actual information
+    description: `Nitya Varigala is a rising second-year student at the University of Virginia, pursuing degrees in Foreign Affairs and Public Policy/Commerce. She is incredibly passionate about the housing crisis in the United States, specifically in terms of housing segregation and the lack of housing affordability. As such, Nitya is excited to be a co-founder of ReNest and design an equitable business practice that focuses on the creation of long-term, accessible, and affordable housing for marginalized communities. Outside of ReNest, you can find Nitya café-hopping with her friends, reading a mystery novel, or trying to cook/bake whatever new recipe she comes across. In pursuit of community development, Nitya hopes to do your mom.` // Complete this based on actual information
   }
 ];
 
